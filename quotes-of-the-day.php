@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Quotes Of The Day
  * Plugin URI: https://www.ashiish.me/
- * Description: Everyday is a quote day, welcome your users with a quotes every time they visit your website.
+ * Description: Everyday is a quote day, welcome your users with a quote every time they visit your website.
  * Version: 1.0.0
  * Author: Ashish Yadav
  * Author URI: https://www.ashiish.me
