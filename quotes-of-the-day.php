@@ -40,3 +40,29 @@ class QuotesOfTheDay {
 		// nothing yet
 	}
 }
+
+if(class_exists('QuotesOfTheDay')) {
+	$quotesoftheday = new QuotesOfTheDay();
+}
+
+/**
+ * QuotesOfTheDay Activation Hook
+ * @since 1.0.0
+ */
+
+function quotesoftheday_activation_hook() {
+	//wp_die("Activation Hook");
+}
+
+register_activation_hook(QUOTESOFTHEDAY_PLUGIN_FILE, 'quotesoftheday_activation_hook');
+
+/**
+ * QuotesOfTheDay Deactivation Hook
+ * @since 1.0.0
+ */
+
+function quotesoftheday_deactivation_hook() {
+	//wp_die("Deactivation Hook");
+}
+
+register_deactivation_hook(QUOTESOFTHEDAY_PLUGIN_FILE, 'quotesoftheday_deactivation_hook');
