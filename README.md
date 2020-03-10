@@ -1,5 +1,5 @@
 # Quotes Of The Day
-Everyday is a quote day, welcome your users with a quotes every time they visit your website.
+Everyday is a quote day, welcome your users with a quote every time they visit your website.
 
 ## WordPress Plugin Development Series:
 
