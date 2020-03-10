@@ -38,7 +38,21 @@ class QuotesOfTheDay {
 	// Constructor
 	function __construct() {
 		// nothing yet
+		$this->quotesoftheday_define_constants(QUOTES_OF_THE_DAY_VERSION, '1.0.0');
 	}
+
+	/**
+	 * QuotesOfTheDay Constants
+	 * @param String name, String value
+	 * @since 1.0.0
+	 */
+
+	private function quotesoftheday_define_constants($name, $value) {
+		if(!defined($name)) {
+			define($name, $value);
+		}
+	}
+
 }
 
 if(class_exists('QuotesOfTheDay')) {
