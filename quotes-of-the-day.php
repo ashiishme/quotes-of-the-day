@@ -19,16 +19,6 @@ if(!defined('ABSPATH')) {
 }
 
 /**
- * CONSTANTS
- * @since 1.0.0
- */
-
-// PLUGIN FILE
-if(!defined('QUOTESOFTHEDAY_PLUGIN_FILE')) {
-	define('QUOTESOFTHEDAY_PLUGIN_FILE', __FILE__);
-}
-
-/**
  * QuotesOfTheDay Class
  * @class QuotesOfTheDay
  */
@@ -37,12 +27,22 @@ class QuotesOfTheDay {
 
 	// Constructor
 	function __construct() {
-		// nothing yet
-		$this->quotesoftheday_define_constants(QUOTES_OF_THE_DAY_VERSION, '1.0.0');
+		// init constants
+		$this->quotesoftheday_init_constants();
 	}
 
 	/**
-	 * QuotesOfTheDay Constants
+	 * QuotesOfTheDay Init Constants
+	 * @since 1.0.0
+	 */
+
+	private function quotesoftheday_init_constants() {
+		$this->quotesoftheday_define_constants('QUOTESOFTHEDAY_PLUGIN_FILE', __FILE__);
+		$this->quotesoftheday_define_constants('QUOTES_OF_THE_DAY_VERSION', '1.0.0');
+	}
+
+	/**
+	 * QuotesOfTheDay Define Constants
 	 * @param String name, String value
 	 * @since 1.0.0
 	 */
@@ -52,7 +52,6 @@ class QuotesOfTheDay {
 			define($name, $value);
 		}
 	}
-
 }
 
 if(class_exists('QuotesOfTheDay')) {
